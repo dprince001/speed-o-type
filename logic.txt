@@ -1,0 +1,7 @@
+focus on input when game starts
+random word generator
+countdown timer
+check for word match
+score function
+difficulty
+toggle on settings button

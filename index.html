@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="difficulty-container">
+        <form id="settings-form">
+            <div>
+                <label for="difficulty">Diffulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="gameStartsIn"><em>Game Starts in <span class="countdown"></span></em></div>
+    
+    <div class="container">
+        <h2>Speed-o-Type</h2>
+        <p>How fast can you type? <span><img src="./content.png" alt="keyboard"></span></p>
+        <p class="small">Next word here:</p>
+        <h1 id="word"></h1>
+        <input type="text" autocomplete="off" id="input-text" placeholder="Type the word here....">
+        <p id="time-container">Time left: <span id="time">0</span>s</p>
+        <p id="score-container">Score: <span id="score">0</span></p>
+
+        <div id="end-game-container"></div>
+    </div>
+
+    <img src="./settings.png" id="setting-btn">
+    <img src="./refresh.png" id="reload-btn">
+
+
+    <script src="main.js"></script>
+</body>
+</html>
