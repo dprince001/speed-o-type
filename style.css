@@ -59,16 +59,17 @@ button {
 #setting-btn,
 #reload-btn {
     position: absolute;
-    bottom: 4rem;
+    /* bottom: 4rem; */
+    bottom: 5%;
     width: 2rem;
 }
 
 #setting-btn {
-    left: 3rem;
+    left: 5%;
 }
 
 #reload-btn {
-    right: 3rem;
+    right: 5%;
 }
 
 .difficulty-container {
@@ -112,6 +113,7 @@ input {
     border: 0;
     border-radius: 4px;
     font-size: 1rem;
+    text-align: center;
     padding: .8rem;
     margin-top: .5rem;
     color: hsl(217, 54%, 11%);

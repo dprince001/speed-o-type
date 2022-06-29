@@ -12,17 +12,71 @@ const countDown = document.querySelector('.countdown');
 
 
 
-let words;
+const words = [
+  'good',
+  'south',
+  'independent',
+  'steering',
+  'gold',
+  'home',
+  'artificial',
+  'intelligence',
+  'nine',
+  'fame',
+  'dismiss',
+  'drop',
+  'caring',
+  'sing',
+  'utensil',
+  'airplane',
+  'pilot',
+  'basket',
+  'juice',
+  'ukraine',
+  'captain',
+  'this',
+  'game',
+  'is',
+  'difficult',
+  'south',
+  'independent',
+  'steering',
+  'gold',
+  'home',
+  'artificial',
+  'intelligence',
+  'nine',
+  'fame',
+  'dismiss',
+  'drop',
+  'caring',
+  'sing',
+  'utensil',
+  'airplane',
+  'pilot',
+  'basket',
+  'juice',
+  'ukraine',
+  'captain',
+  'this',
+  'game',
+  'is',
+  'difficult',
+];
 
-const getWords = async () => {
-  try {
-    const data = await fetch('https://random-word-api.herokuapp.com/word?number=5000');
-    words = await data.json();
-  }catch(error) {
-    alert(error);
-  }
-}
-getWords();
+// let words;
+
+// const getWords = async () => {
+//   try {
+//     // const data = await fetch("https://api.codetabs.com/v1/proxy?quest=<https://random-word-api.herokuapp.com/word?number=5000>");
+//     console.log(data);
+//     words = await data.json();
+//     console.log(words);
+//   }catch(error) {
+//     alert(error);
+//   }
+// }
+// getWords();
 
 
 settingBtn.addEventListener('click', () => {
@@ -128,4 +182,3 @@ window.addEventListener('load', init);
 reloadBtn.addEventListener('click', () => {
   window.location.reload();
 });
-
